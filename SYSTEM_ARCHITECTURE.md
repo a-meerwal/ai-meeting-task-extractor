@@ -11,7 +11,6 @@ meeting-ai-system/
 ├── README.md
 ├── RUN_GUIDE.md
 ├── requirements.txt
-├── app.db
 ├── database.py
 ├── main.py
 ├── models.py
@@ -45,7 +44,6 @@ meeting-ai-system/
 - **`Dockerfile`**: A multi-stage build blueprint for the backend services. The first stage builds required dependencies to optimize the final image size. The second stage creates a hardened, minimal runtime environment that utilizes a non-root user for improved security.
 - **`README.md` & `RUN_GUIDE.md`**: Project documentation files providing setup details, execution instructions, and high-level summaries of the repository's purpose.
 - **`requirements.txt`**: Lists the exact Python dependencies required for the backend services to run (e.g., FastAPI, Celery, SQLAlchemy, google-genai).
-- **`app.db`**: Local SQLite database file. This acts as a fallback or development database artifact, though the main orchestration relies on PostgreSQL as defined in the compose file.
 
 ### Backend Core Files (Python)
 - **`database.py`**: Configures the SQLAlchemy database engine, defining the session maker and declarative base needed to connect with the PostgreSQL database.
