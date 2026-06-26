@@ -1,0 +1,30 @@
+# Secrets & Environments
+.env
+
+# Databases (Crucial: Do not push app.db)
+*.db
+*.sqlite3
+
+# Python Virtual Environments
+.venv/
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node & Frontend (Blocks the massive React dependency folder)
+node_modules/
+frontend/node_modules/
+dist/
+build/
+
+# AI Agent Bloat (Blocks the tools you just abandoned)
+.agents/
+skills/
+antigravity-awesome-skills/
+
+# OS / IDE Artifacts
+.DS_Store
+.vscode/
